@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp</title>
+    <link rel="stylesheet" href="myAppStyle.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="app_header">
+            <h1 id="time-header">GameTime: <span id="time">5.0</span> sec.</h1>
+            <h1 id="result-header" class="hide">YourScore: <span id="result"></span> points</h1>
+        </div>
+
+
+        <div class="app_content">
+            <button class="btn" id="start">BEGIN</button>
+            <div class="game" id="game"></div>
+        </div>
+
+
+        <div class="app_footer">
+            <div class="input">
+                <label for="game-time">Set Your Time Below in sec.</label>
+                <input type="number" id="game-time" min="3" max="60" step="1" value="5">
+            </div>
+        </div>
+
+    </div>
+
+    <script async src="myApp.js"></script>
+</body>
+
+</html>
